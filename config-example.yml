@@ -1,0 +1,30 @@
+# AD Configuration
+ad_host: 172.16.0.1
+ad_port: 389
+ad_user: user@domain.com
+ad_pass: '/Pa$$W0rd/'
+
+# Attribute from where extract the username
+ad_attr: samaccountname
+
+# One or More AD search tree, ex.
+ad_search:
+  - dc=domain,dc=cu
+
+# SSH Zimbra Configuration
+zimbra_host: 172.16.0.2
+zimbra_port: 22
+
+# Must be root to gain su command rights
+zimbra_user: root
+
+# If server not use key authorization
+zimbra_pass: ''
+
+# Using key for authorization, this is the full path of private key
+zimbra_key: ''
+
+# List of users that can be in Zimbra but not in AD
+zimbra_white_list:
+  - user1
+  - user2
